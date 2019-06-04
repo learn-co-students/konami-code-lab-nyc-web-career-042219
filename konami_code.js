@@ -12,5 +12,33 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+
+  let idx = 0;
+
+  document.body.addEventListener("keydown", function(e){
+    const key = e.key
+    
+    
+    if (key === codes[idx]){
+      idx++
+      
+      if (idx === codes.length){
+        alert("BALLIN")
+      
+        idx = 0 
+        
+      } 
+
+    } else {
+      idx = 0
+    }
+  })
 }
+
+
+    
+
+
+
+
+
